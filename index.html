@@ -394,7 +394,7 @@ button{font-family:inherit}
       <button data-lang="de">🇩🇪 DE</button>
     </div>
     <button class="icon-btn" id="settingsBtn" aria-label="Settings">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
     </button>
   </div>
 
@@ -420,17 +420,18 @@ button{font-family:inherit}
     <div class="install-hint" id="installHint" data-i18n="install_hint">If no prompt appears: on iOS, tap Share → Add to Home Screen.</div>
   </div>
 
-  <div class="compare-card">    <div class="field-grid">
+  <div class="compare-card">    
+    <div class="field-grid">
       <div class="field">
         <label data-i18n="send_from">Send from</label>
         <div class="select-wrap">
-          <select id="sendCountry"></select>
+          <select id="sendCountrySelect"></select>
         </div>
       </div>
       <div class="field">
         <label data-i18n="send_to">Send to</label>
         <div class="select-wrap">
-          <select id="receiveCountry"></select>
+          <select id="receiveCountrySelect"></select>
         </div>
       </div>
     </div>
@@ -462,7 +463,6 @@ button{font-family:inherit}
 
   <div class="results-list" id="results"></div>
 
-  <!-- هذا البلوك الجديد مهم لـ AdSense: محتوى نصي أصلي -->
   <div class="content-block">
     <h2 data-i18n="seo_h2">How to Find the Cheapest Money Transfer in 2026</h2>
     <p data-i18n="seo_p1">Sending money abroad to support family in Tunisia, Morocco, or Egypt can be expensive if you choose the wrong provider. Traditional banks often charge high hidden fees and offer poor exchange rates. Kamel Money solves this by comparing 7 trusted remittance operators in real-time, including Wise, Remitly, Revolut, WorldRemit, Ria, MoneyGram, and Western Union.</p>
@@ -481,7 +481,6 @@ button{font-family:inherit}
   </div>
 </div>
 
-<!-- Bottom tab bar -->
 <div class="bottom-bar">
   <div class="bottom-bar-inner">
     <button class="btab active">
@@ -489,7 +488,7 @@ button{font-family:inherit}
       <span data-i18n="tab_compare">Compare</span>
     </button>
     <button class="btab" id="bottomSettingsBtn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       <span data-i18n="tab_settings">Settings</span>
     </button>
     <button class="btab" id="bottomAboutBtn">
@@ -499,7 +498,6 @@ button{font-family:inherit}
   </div>
 </div>
 
-<!-- Settings Drawer -->
 <div class="settings-backdrop" id="settingsBackdrop"></div>
 <div class="settings-drawer" id="settingsDrawer" role="dialog" aria-modal="true" aria-label="Settings">
   <div class="drawer-handle"></div>
@@ -539,7 +537,6 @@ button{font-family:inherit}
   <button class="close-drawer" id="closeSettings" data-i18n="close">Close</button>
 </div>
 
-<!-- About / Privacy Modal - صلحنا المشكل: نحينا Fermer الزايد -->
 <div class="modal-backdrop" id="infoModal">
   <div class="modal" role="dialog" aria-modal="true">
     <div id="infoModalBody"></div>
@@ -671,8 +668,8 @@ function parseAmountInput(v){ const clean = v.replace(/[^\d.,]/g,'').replace(','
 
 function findCountry(list, code){ return list.find(c=>c.code===code); }
 function populateSelects(){
-  const sendSel = document.getElementById('sendCountry');
-  const recSel = document.getElementById('receiveCountry');
+  const sendSel = document.getElementById('sendCountrySelect');
+  const recSel = document.getElementById('receiveCountrySelect');
   sendSel.innerHTML = ''; recSel.innerHTML = '';
   SEND_COUNTRIES.forEach(c=>{ const o = document.createElement('option'); o.value = c.code; o.textContent = `${c.flag} ${c.name[state.lang] || c.name.en} — ${c.currency}`; if(c.code === state.sendCountry) o.selected = true; sendSel.appendChild(o); });
   RECEIVE_COUNTRIES.forEach(c=>{ const o = document.createElement('option'); o.value = c.code; o.textContent = `${c.flag} ${c.name[state.lang] || c.name.en} — ${c.currency}`; if(c.code === state.receiveCountry) o.selected = true; recSel.appendChild(o); });
@@ -739,7 +736,6 @@ function render(){
           <span><b>${tr('rate')}</b> ${formatNumber(q.rate,4)}</span>
           <span><b>${tr('arrives')}</b> ${speedText(q.speedHours)}</span>
         </div>
-      </div>
       <div class="p-right">
         <div class="p-receive">${formatMoney(q.receive, q.receiveCurrency)}</div>
         <div class="p-save">${tr('total_to_receive')}</div>
@@ -756,11 +752,11 @@ function render(){
   });
 }
 
-document.getElementById('sendCountry').addEventListener('change', e=>{
+document.getElementById('sendCountrySelect').addEventListener('change', e=>{
   state.sendCountry = e.target.value;
   render();
 });
-document.getElementById('receiveCountry').addEventListener('change', e=>{
+document.getElementById('receiveCountrySelect').addEventListener('change', e=>{
   state.receiveCountry = e.target.value;
   render();
 });
@@ -887,7 +883,7 @@ installBtn.addEventListener('click', async ()=>{
   } else {
     const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
     showToast(isIOS
-    ? (state.lang==='fr'? 'Partager → Sur l’écran d’accueil' : state.lang==='de'? 'Teilen → Zum Home-Bildschirm' : state.lang==='cs'? 'Sdílet → Přidat na plochu' : 'Tap Share → Add to Home Screen')
+   ? (state.lang==='fr'? 'Partager → Sur l’écran d’accueil' : state.lang==='de'? 'Teilen → Zum Home-Bildschirm' : state.lang==='cs'? 'Sdílet → Přidat na plochu' : 'Tap Share → Add to Home Screen')
       : 'App installable from your browser menu.');
   }
 });
@@ -912,7 +908,9 @@ if('serviceWorker' in navigator){
   const blob = new Blob([swCode], {type:'text/javascript'});
   const swUrl = URL.createObjectURL(blob);
   navigator.serviceWorker.register(swUrl).catch(()=>{});
-/* Init – مع الكورس الحي */
+}
+
+/* Init */
 function init(){
   document.querySelectorAll('[data-lang]').forEach(b=>{
     b.classList.toggle('active', b.dataset.lang === state.lang);
