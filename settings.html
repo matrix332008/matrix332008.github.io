@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Settings - Kamel Money</title>
+<meta name="description" content="Adjust Kamel Money settings: change language, number format, and view affiliate disclosure.">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1238527510792689" crossorigin="anonymous"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--green:#0d9a62;--bg:#f6f7f3;--card:#fff;--text:#1a221d;--muted:#6b756f;--border:#e3e6e1;--maxw:460px}
@@ -19,7 +23,7 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
 .seg button{border:0;background:transparent;padding:8px 12px;border-radius:9px;font-size:13px;font-weight:700;color:#54615a;cursor:pointer}
 .seg button.active{background:#fff;color:#1b2822;box-shadow:0 1px 4px rgba(0,0,0,.07)}
 .back-link{display:block;text-align:center;margin-top:20px;color:#506059;font-weight:600;text-decoration:none}
-.bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--border)}
+.bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--border)}
 .bottom-bar-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-around;padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
 .btab{border:0;background:transparent;font-size:11.5px;font-weight:700;color:#6b7870;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:4px 14px;border-radius:12px;text-decoration:none}
 .btab.active{color:var(--green)}
@@ -27,13 +31,13 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
 </head>
 <body>
 <div class="app-shell">
-  <h1 id="title">Settings</h1>
+  <h1 id="title">Nastavení</h1>
 
   <div class="card">
     <div class="setting-row">
       <div class="setting-label">
-        <span id="nfLabel">Number format</span>
-        <small id="nfHint">Applies to all amounts in the app</small>
+        <span id="nfLabel">Formát čísel</span>
+        <small id="nfHint">Platí pro všechny částky v aplikaci</small>
       </div>
       <div class="seg" id="numFormatSeg">
         <button data-nf="western" class="active">1234.56</button>
@@ -43,7 +47,7 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
 
     <div class="setting-row">
       <div class="setting-label">
-        <span id="langLabel">Interface language</span>
+        <span id="langLabel">Jazyk rozhraní</span>
         <small>🇨🇿 Čeština / 🇬🇧 English / 🇫🇷 Français / 🇩🇪 Deutsch</small>
       </div>
       <div class="seg" id="langSeg">
@@ -56,28 +60,28 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
 
     <div class="setting-row">
       <div class="setting-label">
-        <span id="discLabel">Affiliate disclosure</span>
-        <small id="discHint">We may earn a commission when you send via a partner link. This does not affect your price.</small>
+        <span id="discLabel">Affiliate oznámení</span>
+        <small id="discHint">Můžeme získat provizi, pokud odešlete přes partnerský odkaz. Vaše cena se nemění.</small>
       </div>
     </div>
   </div>
 
-  <a href="index.html" class="back-link" id="backLink">← Back to Calculator</a>
+  <a href="index.html" class="back-link" id="backLink">← Zpět ke kalkulačce</a>
 </div>
 
 <div class="bottom-bar">
   <div class="bottom-bar-inner">
     <a class="btab" href="index.html">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
-      <span id="tabCompare">Compare</span>
+      <span id="tabCompare">Porovnat</span>
     </a>
     <a class="btab active" href="settings.html">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
-      <span id="tabSettings">Settings</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
+      <span id="tabSettings">Nastavení</span>
     </a>
     <a class="btab" href="about.html">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-      <span id="tabAbout">About</span>
+      <span id="tabAbout">O aplikaci</span>
     </a>
   </div>
 </div>
@@ -99,7 +103,7 @@ const T = {
 let lang = localStorage.getItem('km_lang') || 'cs';
 let nf = localStorage.getItem('km_nf') || 'western';
 
-function tr(k){ return T[k]? (T[k][lang] || T[k].en) : k; }
+function tr(k){ return T[k]? (T[k] || T[k].en) : k; }
 function applyI18n(){
   document.documentElement.lang = lang;
   document.getElementById('title').textContent = tr('title');
