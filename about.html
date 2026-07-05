@@ -31,6 +31,10 @@
   <h2 data-i18n="h2_not"></h2>
   <p data-i18n="p5"></p>
   <p><span data-i18n="contact_text"></span> <b>Matrix332008@gmail.com</b></p>
+  <p style="margin-top:20px;text-align:center;font-size:14px;">
+    <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a> |
+    <a href="contact.html" data-i18n="footer_contact">Contact</a>
+  </p>
   <a href="index.html" class="back-link" data-i18n="back"></a>
 </div>
 
@@ -41,7 +45,7 @@
       <span data-i18n="tab_compare"></span>
     </a>
     <a class="btab" href="settings.html">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
       <span data-i18n="tab_settings"></span>
     </a>
     <a class="btab active" href="about.html">
@@ -67,7 +71,9 @@ const T = {
   back: {en:'← Back to Kamel Money',fr:'← Retour à Kamel Money',de:'← Zurück zu Kamel Money',cs:'← Zpět na Kamel Money'},
   tab_compare: {en:'Compare',fr:'Comparer',de:'Vergleich',cs:'Porovnat'},
   tab_settings: {en:'Settings',fr:'Réglages',de:'Einstellungen',cs:'Nastavení'},
-  tab_about: {en:'About',fr:'À propos',de:'Über',cs:'O aplikaci'}
+  tab_about: {en:'About',fr:'À propos',de:'Über',cs:'O aplikaci'},
+  footer_privacy: {en:'Privacy Policy',fr:'Confidentialité',de:'Datenschutz',cs:'Ochrana soukromí'},
+  footer_contact: {en:'Contact',fr:'Contact',de:'Kontakt',cs:'Kontakt'}
 };
 
 const lang = localStorage.getItem('km_lang') || 'en';
