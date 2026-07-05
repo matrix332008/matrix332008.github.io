@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +7,126 @@
 <meta name="description" content="Privacy Policy for Kamel Money. Learn how we handle data, cookies, and third-party services like Google AdSense.">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  body{font-family:'Inter',sans-serif;background:#f6f7f3;color:#1a221d;margin:0;padding:24px;line-height:1.7;max-width:800px;margin:auto}
+  body{font-family:'Inter',sans-serif;background:#f6f7f3;color:#1a221d;margin:0;padding:24px;line-height:1.7;max-width:800px;margin:auto;padding-bottom:100px}
   h1{font-family:'Fraunces',serif;font-size:32px;margin-bottom:8px}
   h2{font-family:'Fraunces',serif;font-size:22px;margin-top:32px;margin-bottom:12px;border-bottom:1px solid #e3e6e1;padding-bottom:8px}
   a{color:#0d9a62;font-weight:600}
-  .card{background:#fff;border:1px solid #e3e6e1;border-radius:18px;padding:24px;box-shadow:0 4px 24px rgba(21,41,30,.07)}
-  .date{color:#6b756f;font-size:14px;margin-bottom:24px}
+ .card{background:#fff;border:1px solid #e3e6e1;border-radius:18px;padding:24px;box-shadow:0 4px 24px rgba(21,41,30,.07)}
+ .date{color:#6b756f;font-size:14px;margin-bottom:24px}
   ul{padding-left:20px}
   li{margin-bottom:10px}
+ .back-link{display:inline-block;margin-top:24px}
+ .bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid #e3e6e1}
+ .bottom-bar-inner{max-width:460px;margin:0 auto;display:flex;justify-content:space-around;padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
+ .btab{border:0;background:transparent;font-size:11.5px;font-weight:700;color:#6b7870;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:4px 14px;border-radius:12px;text-decoration:none}
+ .btab.active{color:#0d9a62}
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>Privacy Policy for Kamel Money</h1>
-  <p class="date">Last updated: July 5, 2026</p>
+  <h1 data-i18n="h1"></h1>
+  <p class="date" data-i18n="date"></p>
+  <p data-i18n="p_intro"></p>
 
-  <p>Welcome to Kamel Money ("we", "our", "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our website, Kamel Money.</p>
+  <h2 data-i18n="h2_1"></h2>
+  <p data-i18n="p_1"></p>
 
-  <h2>1. Information We Do Not Collect</h2>
-  <p>Kamel Money is a free comparison tool. We do not require user registration, and we do not collect personally identifiable information such as your name, email address, phone number, or financial account details. All calculations are performed in your browser.</p>
-
-  <h2>2. Information We Collect Automatically</h2>
-  <p>When you use our service, we may automatically collect certain non-personal information through cookies and similar technologies. This includes:</p>
+  <h2 data-i18n="h2_2"></h2>
+  <p data-i18n="p_2"></p>
   <ul>
-    <li><b>Usage Data:</b> Your IP address, browser type, device type, and pages visited. This helps us understand how our service is used and improve it.</li>
-    <li><b>Preferences:</b> We use `localStorage` to save your language and number format preferences on your device. This data never leaves your browser.</li>
+    <li data-i18n="li_2_1"></li>
+    <li data-i18n="li_2_2"></li>
   </ul>
 
-  <h2>3. Cookies and Third-Party Services</h2>
-  <p>We use third-party services that may place cookies on your device:</p>
+  <h2 data-i18n="h2_3"></h2>
+  <p data-i18n="p_3"></p>
   <ul>
-    <li><b>Google AdSense:</b> We use Google AdSense to display ads. Google uses cookies to serve ads based on your prior visits to our website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</li>
-    <li><b>Analytics:</b> We may use privacy-friendly analytics to collect anonymous usage data to improve our service. We do not track individuals.</li>
+    <li data-i18n="li_3_1"></li>
+    <li data-i18n="li_3_2"></li>
   </ul>
-  <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
+  <p data-i18n="p_3_2"></p>
 
-  <h2>4. Affiliate Disclosure</h2>
-  <p>Kamel Money compares money transfer services. Some of the links to providers may be affiliate links. If you click on a partner link and complete a transfer, we may earn a commission. This comes at no extra cost to you and does not affect our comparison results or rankings. Our goal is to provide unbiased, transparent information.</p>
+  <h2 data-i18n="h2_4"></h2>
+  <p data-i18n="p_4"></p>
 
-  <h2>5. Data Security</h2>
-  <p>The security of your data is important to us. Since we do not collect personal data, your risk is minimized. However, remember that no method of transmission over the Internet is 100% secure.</p>
+  <h2 data-i18n="h2_5"></h2>
+  <p data-i18n="p_5"></p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>Our Service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from children under 18.</p>
+  <h2 data-i18n="h2_6"></h2>
+  <p data-i18n="p_6"></p>
 
-  <h2>7. Links to Other Websites</h2>
-  <p>Our Service may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+  <h2 data-i18n="h2_7"></h2>
+  <p data-i18n="p_7"></p>
 
-  <h2>8. Changes to This Privacy Policy</h2>
-  <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+  <h2 data-i18n="h2_8"></h2>
+  <p data-i18n="p_8"></p>
 
-  <h2>9. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, you can contact us:</p>
-  <p>By email: <b>Matrix332008@gmail.com</b></p>
-  
-  <p style="margin-top:24px"><a href="index.html">← Back to Kamel Money</a></p>
+  <h2 data-i18n="h2_9"></h2>
+  <p data-i18n="p_9"></p>
+  <p><span data-i18n="contact_text"></span> <b>Matrix332008@gmail.com</b></p>
+
+  <a href="index.html" class="back-link" data-i18n="back"></a>
 </div>
+
+<div class="bottom-bar">
+  <div class="bottom-bar-inner">
+    <a class="btab" href="index.html">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+      <span data-i18n="tab_compare"></span>
+    </a>
+    <a class="btab" href="settings.html">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
+      <span data-i18n="tab_settings"></span>
+    </a>
+    <a class="btab" href="about.html">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <span data-i18n="tab_about"></span>
+    </a>
+  </div>
+</div>
+
+<script>
+const T = {
+  h1: {en:'Privacy Policy for Kamel Money',fr:'Politique de confidentialité de Kamel Money',de:'Datenschutzerklärung für Kamel Money',cs:'Zásady ochrany osobních údajů Kamel Money'},
+  date: {en:'Last updated: July 5, 2026',fr:'Dernière mise à jour : 5 juillet 2026',de:'Zuletzt aktualisiert: 5. Juli 2026',cs:'Poslední aktualizace: 5. července 2026'},
+  p_intro: {en:'Welcome to Kamel Money ("we", "our", "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our website, Kamel Money.',fr:'Bienvenue sur Kamel Money (« nous », « notre »). Nous nous engageons à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et partageons les informations lorsque vous utilisez notre site web, Kamel Money.',de:'Willkommen bei Kamel Money ("wir", "uns"). Wir verpflichten uns, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Informationen sammeln, verwenden und weitergeben, wenn Sie unsere Website Kamel Money nutzen.',cs:'Vítejte v Kamel Money („my“, „naše“). Zavazujeme se chránit vaše soukromí. Tyto zásady ochrany osobních údajů vysvětlují, jak shromažďujeme, používáme a sdílíme informace, když používáte naši webovou stránku Kamel Money.'},
+  h2_1: {en:'1. Information We Do Not Collect',fr:'1. Informations que nous ne collectons pas',de:'1. Informationen, die wir nicht sammeln',cs:'1. Informace, které neshromažďujeme'},
+  p_1: {en:'Kamel Money is a free comparison tool. We do not require user registration, and we do not collect personally identifiable information such as your name, email address, phone number, or financial account details. All calculations are performed in your browser.',fr:'Kamel Money est un outil de comparaison gratuit. Nous n’exigeons pas d’inscription et nous ne collectons pas d’informations personnelles identifiables telles que votre nom, adresse e-mail, numéro de téléphone ou détails de compte financier. Tous les calculs sont effectués dans votre navigateur.',de:'Kamel Money ist ein kostenloses Vergleichstool. Wir benötigen keine Benutzerregistrierung und sammeln keine personenbezogenen Daten wie Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer oder Finanzkontodaten. Alle Berechnungen werden in Ihrem Browser durchgeführt.',cs:'Kamel Money je bezplatný srovnávací nástroj. Nevyžadujeme registraci uživatele a neshromažďujeme osobně identifikovatelné informace, jako je vaše jméno, e-mailová adresa, telefonní číslo nebo údaje o finančním účtu. Všechny výpočty se provádějí ve vašem prohlížeči.'},
+  h2_2: {en:'2. Information We Collect Automatically',fr:'2. Informations que nous collectons automatiquement',de:'2. Automatisch erfasste Informationen',cs:'2. Informace, které shromažďujeme automaticky'},
+  p_2: {en:'When you use our service, we may automatically collect certain non-personal information through cookies and similar technologies. This includes:',fr:'Lorsque vous utilisez notre service, nous pouvons collecter automatiquement certaines informations non personnelles via des cookies et technologies similaires. Cela inclut :',de:'Wenn Sie unseren Service nutzen, erfassen wir möglicherweise automatisch bestimmte nicht-personenbezogene Informationen durch Cookies und ähnliche Technologien. Dazu gehören:',cs:'Když používáte naši službu, můžeme automaticky shromažďovat určité neosobní informace prostřednictvím souborů cookie a podobných technologií. Patří sem:'},
+  li_2_1: {en:'<b>Usage Data:</b> Your IP address, browser type, device type, and pages visited. This helps us understand how our service is used and improve it.',fr:'<b>Données d’utilisation :</b> Votre adresse IP, type de navigateur, type d’appareil et pages visitées. Cela nous aide à comprendre comment notre service est utilisé et à l’améliorer.',de:'<b>Nutzungsdaten:</b> Ihre IP-Adresse, Browsertyp, Gerätetyp und besuchte Seiten. Dies hilft uns zu verstehen, wie unser Service genutzt wird, und ihn zu verbessern.',cs:'<b>Údaje o používání:</b> Vaše IP adresa, typ prohlížeče, typ zařízení a navštívené stránky. To nám pomáhá pochopit, jak je naše služba používána, a vylepšovat ji.'},
+  li_2_2: {en:'<b>Preferences:</b> We use `localStorage` to save your language and number format preferences on your device. This data never leaves your browser.',fr:'<b>Préférences :</b> Nous utilisons `localStorage` pour enregistrer vos préférences de langue et de format de nombre sur votre appareil. Ces données ne quittent jamais votre navigateur.',de:'<b>Einstellungen:</b> Wir verwenden `localStorage`, um Ihre Sprach- und Zahlenformat-Einstellungen auf Ihrem Gerät zu speichern. Diese Daten verlassen niemals Ihren Browser.',cs:'<b>Předvolby:</b> Používáme `localStorage` k uložení vašich předvoleb jazyka a formátu čísel ve vašem zařízení. Tato data nikdy neopustí váš prohlížeč.'},
+  h2_3: {en:'3. Cookies and Third-Party Services',fr:'3. Cookies et services tiers',de:'3. Cookies und Drittanbieterdienste',cs:'3. Soubory cookie a služby třetích stran'},
+  p_3: {en:'We use third-party services that may place cookies on your device:',fr:'Nous utilisons des services tiers qui peuvent placer des cookies sur votre appareil :',de:'Wir nutzen Dienste von Drittanbietern, die möglicherweise Cookies auf Ihrem Gerät platzieren:',cs:'Používáme služby třetích stran, které mohou umístit soubory cookie do vašeho zařízení:'},
+  li_3_1: {en:'<b>Google AdSense:</b> We use Google AdSense to display ads. Google uses cookies to serve ads based on your prior visits to our website or other websites. Google\'s use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.',fr:'<b>Google AdSense :</b> Nous utilisons Google AdSense pour afficher des publicités. Google utilise des cookies pour diffuser des annonces basées sur vos visites antérieures sur notre site ou d’autres sites. L’utilisation par Google des cookies publicitaires lui permet, ainsi qu’à ses partenaires, de vous proposer des annonces en fonction de votre visite sur notre site et/ou d’autres sites sur Internet. Vous pouvez désactiver la publicité personnalisée en visitant les <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Paramètres Google Ads</a>.',de:'<b>Google AdSense:</b> Wir verwenden Google AdSense zur Anzeige von Werbung. Google verwendet Cookies, um Anzeigen basierend auf Ihren früheren Besuchen auf unserer Website oder anderen Websites zu schalten. Die Verwendung von Werbe-Cookies durch Google ermöglicht es ihm und seinen Partnern, Ihnen Anzeigen basierend auf Ihrem Besuch auf unserer und/oder anderen Websites im Internet zu schalten. Sie können personalisierte Werbung deaktivieren, indem Sie die <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google-Anzeigeneinstellungen</a> besuchen.',cs:'<b>Google AdSense:</b> Používáme Google AdSense k zobrazování reklam. Google používá soubory cookie k zobrazování reklam na základě vašich předchozích návštěv našich webových stránek nebo jiných webů. Používání reklamních souborů cookie společností Google umožňuje jí a jejím partnerům zobrazovat vám reklamy na základě vaší návštěvy našich stránek a/nebo jiných stránek na internetu. Personalizovanou reklamu můžete deaktivovat v <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Nastavení reklam Google</a>.'},
+  li_3_2: {en:'<b>Analytics:</b> We may use privacy-friendly analytics to collect anonymous usage data to improve our service. We do not track individuals.',fr:'<b>Analytique :</b> Nous pouvons utiliser des outils d’analyse respectueux de la vie privée pour collecter des données d’utilisation anonymes afin d’améliorer notre service. Nous ne suivons pas les individus.',de:'<b>Analytik:</b> Wir verwenden möglicherweise datenschutzfreundliche Analysen, um anonyme Nutzungsdaten zur Verbesserung unseres Dienstes zu sammeln. Wir verfolgen keine Einzelpersonen.',cs:'<b>Analytika:</b> Můžeme používat analytiku šetrnou k soukromí ke shromažďování anonymních údajů o používání ke zlepšení naší služby. Nesledujeme jednotlivce.'},
+  p_3_2: {en:'You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.',fr:'Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour indiquer quand un cookie est envoyé. Cependant, si vous n’acceptez pas les cookies, vous pourriez ne pas pouvoir utiliser certaines parties de notre Service.',de:'Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Dienstes nicht nutzen.',cs:'Můžete nastavit svůj prohlížeč tak, aby odmítal všechny soubory cookie nebo aby indikoval, když je soubor cookie odesílán. Pokud však soubory cookie nepřijmete, možná nebudete moci používat některé části naší Služby.'},
+  h2_4: {en:'4. Affiliate Disclosure',fr:'4. Divulgation d’affiliation',de:'4. Offenlegung von Partnerprogrammen',cs:'4. Zveřejnění partnerských vztahů'},
+  p_4: {en:'Kamel Money compares money transfer services. Some of the links to providers may be affiliate links. If you click on a partner link and complete a transfer, we may earn a commission. This comes at no extra cost to you and does not affect our comparison results or rankings. Our goal is to provide unbiased, transparent information.',fr:'Kamel Money compare des services de transfert d’argent. Certains liens vers des fournisseurs peuvent être des liens d’affiliation. Si vous cliquez sur un lien partenaire et effectuez un transfert, nous pouvons percevoir une commission. Cela n’entraîne aucun coût supplémentaire pour vous et n’affecte pas nos résultats de comparaison ou classements. Notre objectif est de fournir des informations impartiales et transparentes.',de:'Kamel Money vergleicht Geldtransferdienste. Einige der Links zu Anbietern können Affiliate-Links sein. Wenn Sie auf einen Partnerlink klicken und eine Überweisung abschließen, erhalten wir möglicherweise eine Provision. Dies verursacht keine zusätzlichen Kosten für Sie und beeinflusst nicht unsere Vergleichsergebnisse oder Rankings. Unser Ziel ist es, unvoreingenommene, transparente Informationen bereitzustellen.',cs:'Kamel Money porovnává služby převodu peněz. Některé odkazy na poskytovatele mohou být affiliate odkazy. Pokud kliknete na partnerský odkaz a dokončíte převod, můžeme získat provizi. To pro vás neznamená žádné další náklady a neovlivňuje naše výsledky srovnání ani hodnocení. Naším cílem je poskytovat nestranné a transparentní informace.'},
+  h2_5: {en:'5. Data Security',fr:'5. Sécurité des données',de:'5. Datensicherheit',cs:'5. Zabezpečení dat'},
+  p_5: {en:'The security of your data is important to us. Since we do not collect personal data, your risk is minimized. However, remember that no method of transmission over the Internet is 100% secure.',fr:'La sécurité de vos données est importante pour nous. Étant donné que nous ne collectons pas de données personnelles, votre risque est minimisé. Cependant, n’oubliez pas qu’aucune méthode de transmission sur Internet n’est sécurisée à 100 %.',de:'Die Sicherheit Ihrer Daten ist uns wichtig. Da wir keine personenbezogenen Daten sammeln, ist Ihr Risiko minimiert. Denken Sie jedoch daran, dass keine Übertragungsmethode über das Internet 100 % sicher ist.',cs:'Bezpečnost vašich dat je pro nás důležitá. Protože neshromažďujeme osobní údaje, je vaše riziko minimalizováno. Pamatujte však, že žádná metoda přenosu přes internet není 100% bezpečná.'},
+  h2_6: {en:'6. Children\'s Privacy',fr:'6. Confidentialité des enfants',de:'6. Datenschutz von Kindern',cs:'6. Soukromí dětí'},
+  p_6: {en:'Our Service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from children under 18.',fr:'Notre Service ne s’adresse à personne de moins de 18 ans. Nous ne collectons pas sciemment d’informations personnellement identifiables auprès d’enfants de moins de 18 ans.',de:'Unser Service richtet sich nicht an Personen unter 18 Jahren. Wir sammeln wissentlich keine personenbezogenen Daten von Kindern unter 18 Jahren.',cs:'Naše Služba není určena nikomu mladšímu 18 let. Vědomě neshromažďujeme osobně identifikovatelné informace od dětí mladších 18 let.'},
+  h2_7: {en:'7. Links to Other Websites',fr:'7. Liens vers d’autres sites web',de:'7. Links zu anderen Websites',cs:'7. Odkazy na jiné webové stránky'},
+  p_7: {en:'Our Service may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party\'s site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',fr:'Notre Service peut contenir des liens vers d’autres sites web qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons vivement de consulter la politique de confidentialité de chaque site que vous visitez. Nous n’avons aucun contrôle et n’assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites ou services tiers.',de:'Unser Service kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Link eines Drittanbieters klicken, werden Sie zur Website dieses Drittanbieters weitergeleitet. Wir empfehlen Ihnen dringend, die Datenschutzrichtlinie jeder Website, die Sie besuchen, zu überprüfen. Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter.',cs:'Naše Služba může obsahovat odkazy na jiné webové stránky, které nejsou provozovány námi. Pokud kliknete na odkaz třetí strany, budete přesměrováni na stránky této třetí strany. Důrazně doporučujeme, abyste si přečetli Zásady ochrany osobních údajů každé stránky, kterou navštívíte. Nemáme žádnou kontrolu a nepřebíráme žádnou odpovědnost za obsah, zásady ochrany osobních údajů nebo praktiky jakýchkoli stránek nebo služeb třetích stran.'},
+  h2_8: {en:'8. Changes to This Privacy Policy',fr:'8. Modifications de cette politique de confidentialité',de:'8. Änderungen dieser Datenschutzrichtlinie',cs:'8. Změny těchto Zásad ochrany osobních údajů'},
+  p_8: {en:'We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.',fr:'Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page. Il vous est conseillé de consulter périodiquement cette politique de confidentialité pour tout changement.',de:'Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzrichtlinie auf dieser Seite veröffentlichen. Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen.',cs:'Naše Zásady ochrany osobních údajů můžeme čas od času aktualizovat. O jakýchkoli změnách vás budeme informovat zveřejněním nových Zásad ochrany osobních údajů na této stránce. Doporučujeme vám pravidelně kontrolovat tyto Zásady ochrany osobních údajů kvůli případným změnám.'},
+  h2_9: {en:'9. Contact Us',fr:'9. Nous contacter',de:'9. Kontaktieren Sie uns',cs:'9. Kontaktujte nás'},
+  p_9: {en:'If you have any questions about this Privacy Policy, you can contact us:',fr:'Si vous avez des questions sur cette politique de confidentialité, vous pouvez nous contacter :',de:'Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, können Sie uns kontaktieren:',cs:'Máte-li jakékoli dotazy ohledně těchto Zásad ochrany osobních údajů, můžete nás kontaktovat:'},
+  contact_text: {en:'Questions? Contact us at:',fr:'Des questions? Contactez-nous à :',de:'Fragen? Kontaktieren Sie uns unter:',cs:'Otázky? Kontaktujte nás na:'},
+  back: {en:'← Back to Kamel Money',fr:'← Retour à Kamel Money',de:'← Zurück zu Kamel Money',cs:'← Zpět na Kamel Money'},
+  tab_compare: {en:'Compare',fr:'Comparer',de:'Vergleich',cs:'Porovnat'},
+  tab_settings: {en:'Settings',fr:'Réglages',de:'Einstellungen',cs:'Nastavení'},
+  tab_about: {en:'About',fr:'À propos',de:'Über',cs:'O aplikaci'}
+};
+
+const lang = localStorage.getItem('km_lang') || 'en';
+document.documentElement.lang = lang;
+
+document.querySelectorAll('[data-i18n]').forEach(el=>{
+  const key = el.getAttribute('data-i18n');
+  if(T[key] && T[key]) el.innerHTML = T[key];
+});
+</script>
 </body>
 </html>
