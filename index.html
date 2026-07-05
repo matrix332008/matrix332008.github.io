@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0d9a62">
 <meta name="google" content="notranslate">
-<title>Kamel Money — Remittance Fee Comparator</title>
-<meta name="description" content="Compare remittance fees, FX rates and delivery speed for 7 providers. Find the cheapest way to send money home.">
+<title>Kamel Money — Compare Remittance Fees & FX Rates Instantly</title>
+<meta name="description" content="Kamel Money compares live fees and exchange rates from 7 money transfer providers like Wise, Remitly, and Western Union. Save money when sending to Tunisia, Morocco, Algeria, Egypt, and more.">
+<meta name="keywords" content="money transfer, remittance, send money, Wise, Remitly, Tunisia, Morocco, exchange rate, compare fees">
 
 <!-- PWA Manifest (inline) -->
 <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIkthbWVsIE1vbmV5IiwKICAic2hvcnRfbmFtZSI6ICJLYW1lbCIsCiAgInN0YXJ0X3VybCI6ICIuLyIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2Y3ZjhlZiIsCiAgInRoZW1lX2NvbG9yIjogIiMwZDlhNjIiLAogICJpY29ucyI6IFtdCn0=">
@@ -49,7 +50,6 @@ body{
 }
 a{color:var(--green);text-decoration:none}
 button{font-family:inherit}
-
 .app-shell{
   max-width: var(--maxw);
   margin: 0 auto;
@@ -57,8 +57,6 @@ button{font-family:inherit}
   padding: 18px 16px 88px;
   position: relative;
 }
-
-/* Header */
 .topbar{
   display:flex;
   align-items:center;
@@ -94,8 +92,6 @@ button{font-family:inherit}
   background:#fff;display:flex;align-items:center;justify-content:center;
   cursor:pointer;color:#46524b;
 }
-
-/* Brand */
 .brand-block{
   text-align:center;
   padding: 8px 0 18px;
@@ -120,8 +116,6 @@ button{font-family:inherit}
   font-size: 14.5px;
   margin:0;
 }
-
-/* Install card */
 .install-card{
   background: var(--card);
   border:1px solid var(--border);
@@ -158,8 +152,6 @@ button{font-family:inherit}
   font-size:12px;color:var(--muted);
   text-align:center;margin-top:9px;line-height:1.45;
 }
-
-/* Comparator card */
 .compare-card{
   background: var(--card);
   border:1px solid var(--border);
@@ -220,8 +212,6 @@ button{font-family:inherit}
   margin-top:10px;font-size:12.6px;color:var(--muted);
 }
 .live-dot{width:7px;height:7px;background:#1dbe73;border-radius:50%;display:inline-block;margin-right:6px;box-shadow:0 0 3px #e6f8ef;}
-
-/* Sort */
 .sort-row{
   display:flex;align-items:center;justify-content:space-between;
   padding: 8px 4px 12px;
@@ -245,8 +235,6 @@ button{font-family:inherit}
   border-color: #bfe5d0;
   color: var(--green-600);
 }
-
-/* Results */
 .results-list{display:flex;flex-direction:column;gap:11px}
 .provider-card{
   background:#fff;
@@ -302,8 +290,22 @@ button{font-family:inherit}
   color:#0b7a4f;
   font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;
 }
-
-/* Footer links */
+.content-block{
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3b4741;
+}
+.content-block h2{
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 22px;
+  margin: 0 0 12px;
+  color: var(--text);
+}
 .sub-foot{
   text-align:center;
   color:var(--muted);
@@ -311,8 +313,6 @@ button{font-family:inherit}
   margin-top:14px;
 }
 .sub-foot a{color:#506059;font-weight:600;margin:0 7px}
-
-/* Settings drawer */
 .settings-backdrop{
   position:fixed;inset:0;background:rgba(20,28,23,.42);display:none;z-index:50;
 }
@@ -342,8 +342,6 @@ button{font-family:inherit}
 .close-drawer{
   margin-top:10px;width:100%;border:1px solid var(--border);background:#fff;border-radius:12px;padding:12px;font-weight:700;cursor:pointer
 }
-
-/* Modals */
 .modal-backdrop{
   position:fixed;inset:0;background:rgba(22,28,24,.48);display:none;z-index:70;align-items:center;justify-content:center;padding:16px;
 }
@@ -355,11 +353,9 @@ button{font-family:inherit}
 .modal h3{margin:4px 0 10px;font-family:'Fraunces', serif;font-size:24px}
 .modal p, .modal li{font-size:14px;color:#3b4741;line-height:1.6}
 .modal .close-modal{margin-top:12px;border:0;background:#f1f4f1;padding:11px 14px;border-radius:11px;font-weight:700;cursor:pointer}
-
-/* Bottom tab bar */
 .bottom-bar{
   position:fixed;left:0;right:0;bottom:0;z-index:30;
-  background:rgba(255,255,.92);
+  background:rgba(255,255,255,.92);
   backdrop-filter: blur(10px);
   border-top:1px solid var(--border);
 }
@@ -371,19 +367,14 @@ button{font-family:inherit}
   border:0;background:transparent;font-size:11.5px;font-weight:700;color:#6b7870;display:flex;flex-direction:column;align-items:center;gap:4px; cursor:pointer; padding:4px 14px; border-radius:12px;
 }
 .btab.active{color:var(--green-600)}
-
-/* Toast */
 .toast{
   position:fixed;left:50%;bottom:92px;transform:translateX(-50%) translateY(16px);
   background:#1c2822;color:#fff;padding:11px 16px;border-radius:13px;font-size:13px;font-weight:650;opacity:0;transition:.22s; z-index:99; white-space:nowrap; pointer-events:none;
 }
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-
-/* Utility */
 .hidden{display:none !important}
 .muted{color:var(--muted)}
 .disclaimer{font-size:11.7px;color:#7b877f;text-align:center;margin-top:12px;line-height:1.5}
-
 @media (min-width: 540px){
   .app-shell{padding-top:28px}
 }
@@ -392,13 +383,9 @@ button{font-family:inherit}
   .p-name{font-size:14.7px}
 }
 </style>
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1238527510792689" crossorigin="anonymous"></script>
-
 </head>
 <body>
 <div class="app-shell" id="app">
-  <!-- Top bar -->
   <div class="topbar">
     <div class="lang-switch" id="langSwitch" aria-label="Language">
       <button data-lang="cs" class="active">🇨🇿 CZ</button>
@@ -407,18 +394,16 @@ button{font-family:inherit}
       <button data-lang="de">🇩🇪 DE</button>
     </div>
     <button class="icon-btn" id="settingsBtn" aria-label="Settings">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
     </button>
   </div>
 
-  <!-- Brand -->
   <div class="brand-block">
     <div class="km-mark">KM</div>
     <h1 data-i18n="app_title" translate="no">Kamel Money</h1>
     <p data-i18n="tagline">Compare remittance fees in seconds.</p>
   </div>
 
-  <!-- Install card – fixed -->
   <div class="install-card" id="installCard">
     <div class="install-row">
       <div class="install-icon">
@@ -435,9 +420,7 @@ button{font-family:inherit}
     <div class="install-hint" id="installHint" data-i18n="install_hint">If no prompt appears: on iOS, tap Share → Add to Home Screen.</div>
   </div>
 
-  <!-- Comparator -->
-  <div class="compare-card">
-    <div class="field-grid">
+  <div class="compare-card">    <div class="field-grid">
       <div class="field">
         <label data-i18n="send_from">Send from</label>
         <div class="select-wrap">
@@ -468,16 +451,6 @@ button{font-family:inherit}
     </div>
   </div>
 
-  <!-- AdSense – Kamel Money – ca-pub-1238527510792689 -->
-  <div style="margin:14px 0;text-align:center">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1238527510792689"
-         data-ad-slot="1111111111"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>  <!-- Sort -->
   <div class="sort-row">
     <div class="sort-label" data-i18n="sort_by">Sort by:</div>
     <div class="sort-pills" id="sortPills">
@@ -487,15 +460,23 @@ button{font-family:inherit}
     </div>
   </div>
 
-  <!-- Results -->
   <div class="results-list" id="results"></div>
 
-  <div class="disclaimer" data-i18n="disclaimer">Rates are indicative model rates. Fees update live in this demo. Always confirm with the provider before sending.</div>
+  <!-- هذا البلوك الجديد مهم لـ AdSense: محتوى نصي أصلي -->
+  <div class="content-block">
+    <h2 data-i18n="seo_h2">How to Find the Cheapest Money Transfer in 2026</h2>
+    <p data-i18n="seo_p1">Sending money abroad to support family in Tunisia, Morocco, or Egypt can be expensive if you choose the wrong provider. Traditional banks often charge high hidden fees and offer poor exchange rates. Kamel Money solves this by comparing 7 trusted remittance operators in real-time, including Wise, Remitly, Revolut, WorldRemit, Ria, MoneyGram, and Western Union.</p>
+    <p data-i18n="seo_p2">Our algorithm checks three key factors for every transfer: the transfer fee, the FX rate margin, and the delivery speed. For example, sending 500 EUR from Germany to Tunisia might cost you 3.99 EUR in fees with one provider, but only 0.90 EUR with another. On a 500 EUR transfer, the difference in the final amount received can be over 15 EUR. Over a year, that’s more than 180 EUR saved.</p>
+    <p data-i18n="seo_p3">Exchange rates change every hour. That’s why Kamel Money fetches live mid-market rates from reliable sources and updates all calculations automatically. We do not add any markup. The rates you see are indicative and designed to help you make an informed decision before you send. Always confirm the final rate and fees on the provider’s official website before completing your transaction.</p>
+    <p data-i18n="seo_p4">This tool is free to use and requires no registration. We may receive a commission if you choose to send money via one of our partner links, but this does not affect the price you pay or the ranking of results. Our goal is transparency and helping the diaspora save money on every transfer.</p>
+  </div>
+
+  <div class="disclaimer" data-i18n="disclaimer">Rates are indicative model rates. Fees update live in this demo. Always confirm with the provider before sending. Kamel Money is not a financial institution.</div>
 
   <div class="sub-foot">
-    <a href="#" id="aboutLink" data-i18n="about">About</a> ·
-    <a href="#" id="privacyLink" data-i18n="privacy">Privacy</a> ·
-    <a href="#" id="adsLink">AdSense Info</a>
+    <a href="about.html" id="aboutLink" data-i18n="about">About</a> ·
+    <a href="privacy.html" id="privacyLink" data-i18n="privacy">Privacy</a> ·
+    <a href="contact.html" id="contactLink" data-i18n="contact">Contact</a>
     <div style="margin-top:6px">© 2024 Kamel Money</div>
   </div>
 </div>
@@ -508,7 +489,7 @@ button{font-family:inherit}
       <span data-i18n="tab_compare">Compare</span>
     </button>
     <button class="btab" id="bottomSettingsBtn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0.33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       <span data-i18n="tab_settings">Settings</span>
     </button>
     <button class="btab" id="bottomAboutBtn">
@@ -558,7 +539,7 @@ button{font-family:inherit}
   <button class="close-drawer" id="closeSettings" data-i18n="close">Close</button>
 </div>
 
-<!-- About / Privacy Modal -->
+<!-- About / Privacy Modal - صلحنا المشكل: نحينا Fermer الزايد -->
 <div class="modal-backdrop" id="infoModal">
   <div class="modal" role="dialog" aria-modal="true">
     <div id="infoModalBody"></div>
@@ -566,9 +547,7 @@ button{font-family:inherit}
   </div>
 </div>
 
-<div class="toast" id="toast"></div>
-
-<script>
+<div class="toast" id="toast"></div><script>
 /* ---------- Data ---------- */
 const SEND_COUNTRIES = [
   { code:'CZ', name:{en:'Czech Republic',fr:'République tchèque',de:'Tschechien',cs:'Česko'}, currency:'CZK', flag:'🇨🇿'},
@@ -600,7 +579,6 @@ const RECEIVE_COUNTRIES = [
   { code:'NG', name:{en:'Nigeria',fr:'Nigéria',de:'Nigeria',cs:'Nigérie'}, currency:'NGN', flag:'🇳🇬'},
 ];
 
-/* --- Live FX – الإضافة الوحيدة --- */
 let USD_RATES = {
   USD:1, EUR:0.92, GBP:0.79, CAD:1.36, AED:3.673,
   CZK:22.8, PLN:4.02,
@@ -625,7 +603,6 @@ const PROVIDERS = [
   { id:'westernunion', name:'Western Union', initials:'WU', feePct:0.014, fixed:3.49, minFee:3.49, spread:0.025, speedMin: 0.1, speedMax: 24, color:'#fff3c4' },
 ];
 
-/* ---------- State ---------- */
 let state = {
   lang: localStorage.getItem('km_lang') || 'cs',
   numberFormat: localStorage.getItem('km_nf') || 'western',
@@ -635,7 +612,6 @@ let state = {
   sort: 'cheap'
 };
 
-/* ---------- i18n – نسخة ملفك الأصلية بالضبط ---------- */
 const T = {
   app_title: {en:'Kamel Money', fr:'Kamel Money', de:'Kamel Money', cs:'Kamel Money'},
   tagline: {en:'Compare remittance fees in seconds.', fr:'Comparez les frais d’envoi en quelques secondes.', de:'Überweisungsgebühren in Sekunden vergleichen.', cs:'Porovnejte poplatky za převody během vteřin.'},
@@ -663,7 +639,8 @@ const T = {
   close: {en:'Close', fr:'Fermer', de:'Schließen', cs:'Zavřít'},
   about: {en:'About', fr:'À propos', de:'Über', cs:'O aplikaci'},
   privacy: {en:'Privacy', fr:'Confidentialité', de:'Datenschutz', cs:'Soukromí'},
-  disclaimer: {en:'Rates are indicative model rates. Fees update live in this demo. Always confirm with the provider before sending.', fr:'Les taux sont indicatifs (modèle). Les frais sont mis à jour en direct dans cette démo. Confirmez toujours auprès du prestataire avant d’envoyer.', de:'Kurse sind indikative Modellkurse. Gebühren werden in dieser Demo live aktualisiert. Bitte immer beim Anbieter bestätigen, bevor Sie senden.', cs:'Kurzy jsou orientační modelové kurzy. Poplatky se v demu aktualizují živě. Před odesláním vždy potvrďte u poskytovatele.'},
+  contact: {en:'Contact', fr:'Contact', de:'Kontakt', cs:'Kontakt'},
+  disclaimer: {en:'Rates are indicative model rates. Fees update live in this demo. Always confirm with the provider before sending. Kamel Money is not a financial institution.', fr:'Les taux sont indicatifs (modèle). Les frais sont mis à jour en direct dans cette démo. Confirmez toujours auprès du prestataire avant d’envoyer. Kamel Money n’est pas une institution financière.', de:'Kurse sind indikative Modellkurse. Gebühren werden in dieser Demo live aktualisiert. Bitte immer beim Anbieter bestätigen, bevor Sie senden. Kamel Money ist kein Finanzinstitut.', cs:'Kurzy jsou orientační modelové kurzy. Poplatky se v demu aktualizují živě. Před odesláním vždy potvrďte u poskytovatele. Kamel Money není finanční instituce.'},
   fee: {en:'Fee', fr:'Frais', de:'Gebühr', cs:'Poplatek'},
   rate: {en:'Rate', fr:'Taux', de:'Kurs', cs:'Kurz'},
   arrives: {en:'Arrives', fr:'Arrivée', de:'Ankunft', cs:'Doručení'},
@@ -676,19 +653,22 @@ const T = {
   day: {en:'day', fr:'jour', de:'Tag', cs:'den'},
   installed: {en:'App installed. Thank you!', fr:'App installée. Merci!', de:'App installiert. Danke!', cs:'Aplikace nainstalována. Děkujeme!'},
   link_copied: {en:'Add your affiliate link in the code.', fr:'Ajoutez votre lien affilié dans le code.', de:'Affiliate-Link im Code einfügen.', cs:'Vložte svůj affiliate odkaz do kódu – demo režim.'},
+  seo_h2: {en:'How to Find the Cheapest Money Transfer in 2026', fr:'Comment trouver le transfert d’argent le moins cher en 2026', de:'So finden Sie 2026 die günstigste Geldüberweisung', cs:'Jak najít nejlevnější převod peněz v roce 2026'},
+  seo_p1: {en:'Sending money abroad to support family in Tunisia, Morocco, or Egypt can be expensive if you choose the wrong provider. Traditional banks often charge high hidden fees and offer poor exchange rates. Kamel Money solves this by comparing 7 trusted remittance operators in real-time, including Wise, Remitly, Revolut, WorldRemit, Ria, MoneyGram, and Western Union.', fr:'Envoyer de l’argent à l’étranger pour soutenir votre famille en Tunisie, au Maroc ou en Égypte peut coûter cher si vous choisissez le mauvais prestataire. Les banques traditionnelles facturent souvent des frais cachés élevés et proposent des taux de change défavorables. Kamel Money résout ce problème en comparant 7 opérateurs de transfert fiables en temps réel, dont Wise, Remitly, Revolut, WorldRemit, Ria, MoneyGram et Western Union.', de:'Geld ins Ausland zu senden, um Familie in Tunesien, Marokko oder Ägypten zu unterstützen, kann teuer sein, wenn Sie den falschen Anbieter wählen. Traditionelle Banken verlangen oft hohe versteckte Gebühren und bieten schlechte Wechselkurse. Kamel Money löst dies, indem es 7 vertrauenswürdige Überweisungsanbieter in Echtzeit vergleicht, darunter Wise, Remitly, Revolut, WorldRemit, Ria, MoneyGram und Western Union.', cs:'Posílání peněz do zahraničí na podporu rodiny v Tunisku, Maroku nebo Egyptě může být drahé, pokud zvolíte nesprávného poskytovatele. Tradiční banky často účtují vysoké skryté poplatky a nabízejí nevýhodné směnné kurzy. Kamel Money to řeší porovnáním 7 důvěryhodných operátorů remitencí v reálném čase, včetně Wise, Remitly, Revolut, WorldRemit, Ria, MoneyGram a Western Union.'},
+  seo_p2: {en:'Our algorithm checks three key factors for every transfer: the transfer fee, the FX rate margin, and the delivery speed. For example, sending 500 EUR from Germany to Tunisia might cost you 3.99 EUR in fees with one provider, but only 0.90 EUR with another. On a 500 EUR transfer, the difference in the final amount received can be over 15 EUR. Over a year, that’s more than 180 EUR saved.', fr:'Notre algorithme vérifie trois facteurs clés pour chaque transfert : les frais de transfert, la marge de change et la vitesse de livraison. Par exemple, envoyer 500 EUR d’Allemagne vers la Tunisie peut vous coûter 3,99 EUR de frais chez un prestataire, mais seulement 0,90 EUR chez un autre. Sur un transfert de 500 EUR, la différence du montant final reçu peut dépasser 15 EUR. Sur un an, cela représente plus de 180 EUR d’économies.', de:'Unser Algorithmus prüft drei Schlüsselfaktoren für jede Überweisung: die Überweisungsgebühr, die Wechselkursmarge und die Liefergeschwindigkeit. Zum Beispiel kann das Senden von 500 EUR von Deutschland nach Tunesien bei einem Anbieter 3,99 EUR an Gebühren kosten, bei einem anderen jedoch nur 0,90 EUR. Bei einer Überweisung von 500 EUR kann der Unterschied im Endbetrag über 15 EUR betragen. Über ein Jahr sind das mehr als 180 EUR Ersparnis.', cs:'Náš algoritmus kontroluje tři klíčové faktory pro každý převod: poplatek za převod, marži směnného kurzu a rychlost doručení. Například odeslání 500 EUR z Německa do Tuniska vás může stát 3,99 EUR na poplatcích u jednoho poskytovatele, ale pouze 0,90 EUR u jiného. U převodu 500 EUR může být rozdíl v konečné přijaté částce přes 15 EUR. Za rok je to úspora více než 180 EUR.'},
+  seo_p3: {en:'Exchange rates change every hour. That’s why Kamel Money fetches live mid-market rates from reliable sources and updates all calculations automatically. We do not add any markup. The rates you see are indicative and designed to help you make an informed decision before you send. Always confirm the final rate and fees on the provider’s official website before completing your transaction.', fr:'Les taux de change changent chaque heure. C’est pourquoi Kamel Money récupère les taux moyens du marché en direct à partir de sources fiables et met à jour tous les calculs automatiquement. Nous n’ajoutons aucune majoration. Les taux que vous voyez sont indicatifs et conçus pour vous aider à prendre une décision éclairée avant d’envoyer. Confirmez toujours le taux final et les frais sur le site officiel du prestataire avant de finaliser votre transaction.', de:'Wechselkurse ändern sich stündlich. Deshalb ruft Kamel Money Live-Mittelkurse von zuverlässigen Quellen ab und aktualisiert alle Berechnungen automatisch. Wir fügen keinen Aufschlag hinzu. Die angezeigten Kurse sind Richtwerte und sollen Ihnen helfen, eine fundierte Entscheidung zu treffen, bevor Sie senden. Bestätigen Sie immer den Endkurs und die Gebühren auf der offiziellen Website des Anbieters, bevor Sie Ihre Transaktion abschließen.', cs:'Směnné kurzy se mění každou hodinu. Proto Kamel Money získává živé středové kurzy ze spolehlivých zdrojů a automaticky aktualizuje všechny výpočty. Nepřidáváme žádnou přirážku. Kurzy, které vidíte, jsou orientační a mají vám pomoci učinit informované rozhodnutí před odesláním. Před dokončením transakce vždy potvrďte konečný kurz a poplatky na oficiálních stránkách poskytovatele.'},
+  seo_p4: {en:'This tool is free to use and requires no registration. We may receive a commission if you choose to send money via one of our partner links, but this does not affect the price you pay or the ranking of results. Our goal is transparency and helping the diaspora save money on every transfer.', fr:'Cet outil est gratuit et ne nécessite aucune inscription. Nous pouvons recevoir une commission si vous choisissez d’envoyer de l’argent via l’un de nos liens partenaires, mais cela n’affecte pas le prix que vous payez ni le classement des résultats. Notre objectif est la transparence et d’aider la diaspora à économiser sur chaque transfert.', de:'Dieses Tool ist kostenlos und erfordert keine Registrierung. Wir erhalten möglicherweise eine Provision, wenn Sie Geld über einen unserer Partnerlinks senden, aber dies beeinflusst nicht den Preis, den Sie zahlen, oder das Ranking der Ergebnisse. Unser Ziel ist Transparenz und der Diaspora zu helfen, bei jeder Überweisung Geld zu sparen.', cs:'Tento nástroj je zdarma a nevyžaduje registraci. Můžeme obdržet provizi, pokud se rozhodnete poslat peníze prostřednictvím jednoho z našich partnerských odkazů, ale to neovlivňuje cenu, kterou platíte, ani pořadí výsledků. Naším cílem je transparentnost a pomoc diaspoře ušetřit peníze na každém převodu.'},
 };
 
 function tr(key){ const d = T[key]; return d? (d[state.lang] || d.en) : key; }
 function applyI18n(){ document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = tr(el.getAttribute('data-i18n')); }); document.documentElement.lang = state.lang; }
 
-/* ---------- Number formatting ---------- */
 const EASTERN_DIGITS = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
 function toEastern(str){ return str.replace(/[0-9]/g, d => EASTERN_DIGITS[+d]).replace(/\./g, '٫').replace(/,/g, '٬'); }
 function formatNumber(n, decimals=2){ const num = Number(n); if(isNaN(num)) return '—'; const parts = num.toFixed(decimals).split('.'); parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ','); let out = parts.join('.'); if(state.numberFormat === 'eastern'){ out = toEastern(out); } return out; }
 function formatMoney(n, currency){ return formatNumber(n, 2) + ' ' + currency; }
 function parseAmountInput(v){ const clean = v.replace(/[^\d.,]/g,'').replace(',', '.'); const n = parseFloat(clean); return isNaN(n)? 0 : n; }
 
-/* ---------- UI Building ---------- */
 function findCountry(list, code){ return list.find(c=>c.code===code); }
 function populateSelects(){
   const sendSel = document.getElementById('sendCountry');
@@ -699,7 +679,6 @@ function populateSelects(){
   document.getElementById('sendCurrencyBadge').textContent = findCountry(SEND_COUNTRIES, state.sendCountry).currency;
 }
 
-/* FX */
 function getMidRate(fromCur, toCur){ const fromUsd = USD_RATES[fromCur]; const toUsd = USD_RATES[toCur]; if(!fromUsd ||!toUsd) return 1; return toUsd / fromUsd; }
 function computeQuotes(){
   const sendC = findCountry(SEND_COUNTRIES, state.sendCountry);
@@ -719,7 +698,9 @@ function computeQuotes(){
   else if(state.sort === 'fast'){ quotes.sort((a,b)=> a.speedHours - b.speedHours); }
   else if(state.sort === 'rate'){ quotes.sort((a,b)=> b.rate - a.rate); }
   return {quotes, mid, sendC, recC};
-}function speedText(h){
+}
+
+function speedText(h){
   if(h < 1){
     const m = Math.max(5, Math.round(h*60));
     return m + ' ' + tr('min');
@@ -758,6 +739,7 @@ function render(){
           <span><b>${tr('rate')}</b> ${formatNumber(q.rate,4)}</span>
           <span><b>${tr('arrives')}</b> ${speedText(q.speedHours)}</span>
         </div>
+      </div>
       <div class="p-right">
         <div class="p-receive">${formatMoney(q.receive, q.receiveCurrency)}</div>
         <div class="p-save">${tr('total_to_receive')}</div>
@@ -774,7 +756,6 @@ function render(){
   });
 }
 
-/* ---------- Events ---------- */
 document.getElementById('sendCountry').addEventListener('change', e=>{
   state.sendCountry = e.target.value;
   render();
@@ -807,7 +788,6 @@ document.getElementById('sortPills').addEventListener('click', e=>{
   render();
 });
 
-/* Language switch */
 function setLang(lang){
   state.lang = lang;
   localStorage.setItem('km_lang', lang);
@@ -825,7 +805,6 @@ document.getElementById('langSeg').addEventListener('click', e=>{
   setLang(b.dataset.lang);
 });
 
-/* Settings drawer */
 const drawer = document.getElementById('settingsDrawer');
 const backdrop = document.getElementById('settingsBackdrop');
 function openSettings(){
@@ -841,7 +820,6 @@ document.getElementById('bottomSettingsBtn').addEventListener('click', openSetti
 document.getElementById('closeSettings').addEventListener('click', closeSettings);
 backdrop.addEventListener('click', closeSettings);
 
-/* Number format toggle */
 document.getElementById('numFormatSeg').addEventListener('click', e=>{
   const b = e.target.closest('button'); if(!b) return;
   state.numberFormat = b.dataset.nf;
@@ -850,7 +828,6 @@ document.getElementById('numFormatSeg').addEventListener('click', e=>{
   render();
 });
 
-/* Info modals */
 const infoModal = document.getElementById('infoModal');
 const infoBody = document.getElementById('infoModalBody');
 
@@ -877,27 +854,6 @@ function showAbout(){
   `);
 }
 
-document.getElementById('privacyLink').addEventListener('click', e=>{
-  e.preventDefault();
-  openInfo(`
-    <h3>${tr('privacy')}</h3>
-    <p>${state.lang==='fr'? "Kamel Money ne collecte aucune donnée personnelle." : state.lang==='de'? "Kamel Money sammelt keine personenbezogenen Daten." : state.lang==='cs'? "Kamel Money neshromažďuje žádné osobní údaje." : "Kamel Money does not collect personal data."}</p>
-    <p>Contact: privacy@kamelmoney.example</p>
-    <button class="close-modal" onclick="document.getElementById('infoModal').classList.remove('open')">${tr('close')}</button>
-  `);
-});
-
-document.getElementById('adsLink').addEventListener('click', e=>{
-  e.preventDefault();
-  openInfo(`
-    <h3>AdSense & Affiliate Disclosure</h3>
-    <p>This demo is AdSense-ready. Replace ca-pub-1238527510792689 with your publisher ID.</p>
-    <p>Affiliate links: We may earn a commission if you complete a transfer through a partner. This never changes the price you see.</p>
-    <button class="close-modal" onclick="document.getElementById('infoModal').classList.remove('open')">${tr('close')}</button>
-  `);
-});
-
-/* Toast */
 let toastTimer;
 function showToast(msg){
   const t = document.getElementById('toast');
@@ -907,7 +863,6 @@ function showToast(msg){
   toastTimer = setTimeout(()=> t.classList.remove('show'), 2100);
 }
 
-/* ---------- PWA Install ---------- */
 let deferredPrompt = null;
 const installBtn = document.getElementById('installBtn');
 const installHint = document.getElementById('installHint');
@@ -932,7 +887,7 @@ installBtn.addEventListener('click', async ()=>{
   } else {
     const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
     showToast(isIOS
-     ? (state.lang==='fr'? 'Partager → Sur l’écran d’accueil' : state.lang==='de'? 'Teilen → Zum Home-Bildschirm' : state.lang==='cs'? 'Sdílet → Přidat na plochu' : 'Tap Share → Add to Home Screen')
+    ? (state.lang==='fr'? 'Partager → Sur l’écran d’accueil' : state.lang==='de'? 'Teilen → Zum Home-Bildschirm' : state.lang==='cs'? 'Sdílet → Přidat na plochu' : 'Tap Share → Add to Home Screen')
       : 'App installable from your browser menu.');
   }
 });
@@ -946,7 +901,6 @@ if(/iphone|ipad|ipod/i.test(navigator.userAgent) &&!window.matchMedia('(display-
   installHint.style.fontWeight = '700';
 }
 
-/* Service Worker */
 if('serviceWorker' in navigator){
   const swCode = `
     const CACHE='km-v1';
@@ -958,8 +912,6 @@ if('serviceWorker' in navigator){
   const blob = new Blob([swCode], {type:'text/javascript'});
   const swUrl = URL.createObjectURL(blob);
   navigator.serviceWorker.register(swUrl).catch(()=>{});
-}
-
 /* Init – مع الكورس الحي */
 function init(){
   document.querySelectorAll('[data-lang]').forEach(b=>{
