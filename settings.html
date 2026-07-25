@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Settings - Kamel Money</title>
 <meta name="description" content="Adjust Kamel Money settings: change language, number format, and view affiliate disclosure.">
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1238527510792689" crossorigin="anonymous"></script>
-
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--green:#0d9a62;--bg:#f6f7f3;--card:#fff;--text:#1a221d;--muted:#6b756f;--border:#e3e6e1;--maxw:460px}
@@ -23,6 +21,8 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
 .seg button{border:0;background:transparent;padding:8px 12px;border-radius:9px;font-size:13px;font-weight:700;color:#54615a;cursor:pointer}
 .seg button.active{background:#fff;color:#1b2822;box-shadow:0 1px 4px rgba(0,0,0,.07)}
 .back-link{display:block;text-align:center;margin-top:20px;color:#506059;font-weight:600;text-decoration:none}
+.sub-foot{text-align:center;color:var(--muted);font-size:12.3px;margin-top:18px}
+.sub-foot a{color:#506059;font-weight:600;margin:0 7px;text-decoration:none}
 .bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--border)}
 .bottom-bar-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-around;padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
 .btab{border:0;background:transparent;font-size:11.5px;font-weight:700;color:#6b7870;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:4px 14px;border-radius:12px;text-decoration:none}
@@ -67,6 +67,13 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
   </div>
 
   <a href="index.html" class="back-link" id="backLink">← Zpět ke kalkulačce</a>
+
+  <div class="sub-foot">
+    <a href="about.html" data-i18n="footer_about">O aplikaci</a> ·
+    <a href="privacy.html" data-i18n="footer_privacy">Soukromí</a> ·
+    <a href="contact.html" data-i18n="footer_contact">Kontakt</a>
+    <div style="margin-top:6px">© 2026 Kamel Money</div>
+  </div>
 </div>
 
 <div class="bottom-bar">
@@ -76,7 +83,7 @@ h1{font-family:'Fraunces',serif;font-size:28px;margin:8px 0 24px;text-align:cent
       <span id="tabCompare">Porovnat</span>
     </a>
     <a class="btab active" href="settings.html">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 0 0 0.33 1.82l.06.06a2 2 0 1 0 2.83-2.83l-.06-.06a1.65 0 0 0-1.82-.33 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 0 0 0 9 19.4a1.65 0 0 0-1.82.33l.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 0 0 0 4.68 15a1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 0 0 0 4.6 9a1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 0 0 0 9 4.68a1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 0 0 0 1 1.51 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 0 0 0 19.4 9a1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 0 0 0-1.51 1z"/></svg>
       <span id="tabSettings">Nastavení</span>
     </a>
     <a class="btab" href="about.html">
@@ -98,6 +105,9 @@ const T = {
   tabCompare: {en:'Compare', fr:'Comparer', de:'Vergleich', cs:'Porovnat'},
   tabSettings: {en:'Settings', fr:'Réglages', de:'Einstellungen', cs:'Nastavení'},
   tabAbout: {en:'About', fr:'À propos', de:'Über', cs:'O aplikaci'},
+  footer_about: {en:'About', fr:'À propos', de:'Über', cs:'O aplikaci'},
+  footer_privacy: {en:'Privacy', fr:'Confidentialité', de:'Datenschutz', cs:'Soukromí'},
+  footer_contact: {en:'Contact', fr:'Contact', de:'Kontakt', cs:'Kontakt'}
 };
 
 let lang = localStorage.getItem('km_lang') || 'cs';
@@ -116,6 +126,10 @@ function applyI18n(){
   document.getElementById('tabCompare').textContent = tr('tabCompare');
   document.getElementById('tabSettings').textContent = tr('tabSettings');
   document.getElementById('tabAbout').textContent = tr('tabAbout');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(T[key] && T[key][lang]) el.textContent = T[key][lang];
+  });
 }
 
 document.getElementById('numFormatSeg').addEventListener('click', e=>{
